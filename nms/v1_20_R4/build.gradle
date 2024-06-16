@@ -1,0 +1,14 @@
+plugins {
+    id "java"
+}
+
+group = "kr.starly.server.nms.${project.name}"
+version = rootProject.version
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot:1.20.6-R0.1-SNAPSHOT:remapped-mojang"
+}

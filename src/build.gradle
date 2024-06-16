@@ -1,0 +1,24 @@
+plugins {
+    id "java"
+}
+
+group = "kr.starly.server"
+version = "1.0"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api "org.json:json:20240303"
+    api "de.tr7zw:item-nbt-api:2.13.0"
+    api project(":nms-multiver")
+}
+
+shadowJar {
+    archiveFileName = "NillLibs.jar"
+    destinationDirectory = file("/target")
+
+    relocate "de.tr7zw.changeme.nbtapi", "kr.starly.libs.nbtapi"
+    relocate "org.json", "kr.starly.libs.json"
+}

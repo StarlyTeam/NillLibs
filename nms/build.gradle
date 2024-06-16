@@ -1,0 +1,12 @@
+plugins {
+    id "java"
+}
+
+group = "kr.starly.server.nms"
+version = "1.0"
+
+subprojects {
+    dependencies {
+        compileOnly rootProject
+    }
+}

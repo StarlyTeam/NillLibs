@@ -1,0 +1,58 @@
+buildscript {
+    repositories { gradlePluginPortal() }
+    dependencies {
+        classpath "io.github.goooler.shadow:shadow-gradle-plugin:8.1.7"
+    }
+}
+
+plugins {
+    id "java"
+    id "java-library"
+    id "io.github.goooler.shadow" version "8.1.7"
+}
+
+group = "kr.starly.server"
+version = "1.0"
+
+allprojects {
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = "UTF-8"
+    }
+
+    shadowJar {
+        destinationDirectory = file("../target")
+    }
+
+    build.dependsOn shadowJar
+}
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: "java-library"
+    apply plugin: "io.github.goooler.shadow"
+
+    java {
+        toolchain.languageVersion = JavaLanguageVersion.of(21)
+    }
+
+    repositories {
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://libraries.minecraft.net/" } // authlib
+        maven { url "https://repo.papermc.io/repository/maven-public/" } // paper-api
+        maven { url "https://repo.codemc.io/repository/maven-public/" } // item-nbt-api
+    }
+
+    dependencies {
+        compileOnly "org.jetbrains:annotations:24.1.0"
+        compileOnly "org.projectlombok:lombok:1.18.32"
+        annotationProcessor "org.projectlombok:lombok:1.18.32"
+        compileOnly "io.netty:netty-all:5.0.0.Alpha2"
+        compileOnly "org.json:json:20240303"
+
+        compileOnly "com.mojang:authlib:6.0.54"
+//        compileOnly "io.papermc.paper:paper-api:1.18-R0.1-SNAPSHOT"
+        compileOnly "io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT"
+        compileOnly "de.tr7zw:item-nbt-api:2.13.0"
+    }
+}
