@@ -7,7 +7,6 @@ import kr.starly.libs.inventory.item.ItemProvider;
 import kr.starly.libs.nms.reflect.resolver.ClassResolver;
 import kr.starly.libs.nms.reflect.resolver.FieldResolver;
 import kr.starly.libs.nms.version.VersionUtils;
-import kr.starly.libs.util.ItemUtils;
 import kr.starly.libs.util.Pair;
 import lombok.Getter;
 import net.md_5.bungee.api.chat.BaseComponent;

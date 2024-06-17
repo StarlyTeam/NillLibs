@@ -1,6 +1,5 @@
 package kr.starly.libs.nms.v1_20_R2;
 
-import com.mojang.authlib.GameProfile;
 import io.netty.channel.Channel;
 import kr.starly.libs.nms.abstraction.util.InjectUtils;
 import kr.starly.libs.nms.reflect.resolver.FieldResolver;

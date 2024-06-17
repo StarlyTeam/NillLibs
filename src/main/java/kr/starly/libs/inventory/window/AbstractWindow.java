@@ -16,7 +16,6 @@ import kr.starly.libs.inventory.inventory.event.PlayerUpdateReason;
 import kr.starly.libs.inventory.inventory.event.UpdateReason;
 import kr.starly.libs.scheduler.Do;
 import kr.starly.libs.util.ArrayUtils;
-import kr.starly.libs.util.InventoryUtils;
 import kr.starly.libs.util.Pair;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.TextComponent;

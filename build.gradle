@@ -1,13 +1,4 @@
-buildscript {
-    repositories { gradlePluginPortal() }
-    dependencies {
-        classpath "io.github.goooler.shadow:shadow-gradle-plugin:8.1.7"
-    }
-}
-
 plugins {
-    id "java"
-    id "java-library"
     id "io.github.goooler.shadow" version "8.1.7"
 }
 
@@ -15,21 +6,8 @@ group = "kr.starly.server"
 version = "1.0"
 
 allprojects {
-    tasks.withType(JavaCompile).configureEach {
-        options.encoding = "UTF-8"
-    }
-
-    shadowJar {
-        destinationDirectory = file("../target")
-    }
-
-    build.dependsOn shadowJar
-}
-
-allprojects {
     apply plugin: "java"
     apply plugin: "java-library"
-    apply plugin: "io.github.goooler.shadow"
 
     java {
         toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -55,4 +33,34 @@ allprojects {
         compileOnly "io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT"
         compileOnly "de.tr7zw:item-nbt-api:2.13.0"
     }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = "UTF-8"
+    }
 }
+
+dependencies {
+    api "org.json:json:20240303"
+    api "de.tr7zw:item-nbt-api:2.13.0"
+
+    api project(":nms:common")
+    api project(":nms:v1_18_R1")
+    api project(":nms:v1_18_R2")
+    api project(":nms:v1_19_R1")
+    api project(":nms:v1_19_R2")
+    api project(":nms:v1_19_R3")
+    api project(":nms:v1_20_R1")
+    api project(":nms:v1_20_R2")
+    api project(":nms:v1_20_R3")
+    api project(":nms:v1_20_R4")
+}
+
+shadowJar {
+    archiveFileName = "NillLibs.jar"
+    destinationDirectory = file("/target")
+
+    relocate "de.tr7zw.changeme.nbtapi", "kr.starly.libs.nbtapi"
+    relocate "org.json", "kr.starly.libs.json"
+}
+
+build.dependsOn shadowJar

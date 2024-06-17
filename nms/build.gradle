@@ -1,12 +1,12 @@
-plugins {
-    id "java"
+subprojects {
+    repositories {
+        mavenLocal()
+    }
+
+    group = "kr.starly.libs.nms.${project.name}"
+    version = rootProject.version
 }
 
-group = "kr.starly.server.nms"
-version = "1.0"
-
-subprojects {
-    dependencies {
-        compileOnly rootProject
-    }
+project(":nms:common") {
+    group = "kr.starly.libs.nms"
 }
