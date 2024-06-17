@@ -34,7 +34,7 @@ public class InjectUtilsImpl implements InjectUtils {
     @Override
     public Channel getChannel(Player player) {
         ServerGamePacketListenerImpl connection = ((CraftPlayer) player).getHandle().connection;
-        Connection manager = new FieldResolver(connection.getClass()).resolveAccessor("connection").get(connection);
+        Connection manager = new FieldResolver(connection.getClass()).resolveAccessor("h").get(connection);
 
         return manager.channel;
     }
@@ -42,8 +42,7 @@ public class InjectUtilsImpl implements InjectUtils {
     @Override
     public String parsePlayerName(Object rawPacket) {
         if (rawPacket instanceof ServerboundHelloPacket packet) {
-            GameProfile gameProfile = packet.getGameProfile();
-            return gameProfile != null ? gameProfile.getName() : null;
+            return packet.getGameProfile().getName();
         }
 
         return null;

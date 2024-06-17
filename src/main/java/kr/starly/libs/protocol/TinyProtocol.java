@@ -122,7 +122,7 @@ public class TinyProtocol {
         boolean looking = true;
         while (looking) {
             Object serverConnection = NmsMultiVersion.getInjectUtils().getServerConnection();
-            List<ChannelFuture> channels = new FieldResolver(serverConnection.getClass()).resolveAccessor("channels").get(serverConnection);
+            List<ChannelFuture> channels = new FieldResolver(serverConnection.getClass()).resolveAccessor("channels", "f").get(serverConnection);
 
             for (ChannelFuture item : channels) {
                 if (item == null) break;
@@ -288,6 +288,8 @@ public class TinyProtocol {
 
         private void handleLoginStart(Channel channel, Object rawPacket) {
             String playerName = NmsMultiVersion.getInjectUtils().parsePlayerName(rawPacket);
+            if (playerName == null) return;
+
             channelLookup.put(playerName, channel);
         }
     }

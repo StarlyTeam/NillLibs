@@ -13,7 +13,7 @@ public final class PacketListenerManager {
             Collections.synchronizedMap(new EnumMap<>(PacketListenerPriority.class));
 
     public PacketListener registerPacketListener(PacketListenerPriority priority, PacketListener listener) {
-        Set<PacketListener> list = listenersMap.computeIfAbsent(priority, k -> new HashSet<>());
+        Set<PacketListener> list = listenersMap.computeIfAbsent(priority, (k) -> new HashSet<>());
         list.add(listener);
 
         return listener;

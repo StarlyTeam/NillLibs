@@ -19,7 +19,7 @@ import org.bukkit.inventory.Inventory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-class InventoryUtilsImpl implements InventoryUtils {
+public class InventoryUtilsImpl implements InventoryUtils {
 
     public static Component createNMSComponent(ComponentWrapper component) {
         if (component == null) return null;

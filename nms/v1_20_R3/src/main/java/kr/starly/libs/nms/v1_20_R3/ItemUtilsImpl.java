@@ -17,7 +17,7 @@ import java.io.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class ItemUtilsImpl implements ItemUtils {
+public class ItemUtilsImpl implements ItemUtils {
 
     @Override
     public byte[] serializeItemStack(org.bukkit.inventory.@NotNull ItemStack itemStack, boolean compressed) {

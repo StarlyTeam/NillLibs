@@ -1,10 +1,10 @@
 subprojects {
+    group = "kr.starly.libs.nms.${project.name}"
+    version = rootProject.version
+
     repositories {
         mavenLocal()
     }
-
-    group = "kr.starly.libs.nms.${project.name}"
-    version = rootProject.version
 }
 
 project(":nms:common") {

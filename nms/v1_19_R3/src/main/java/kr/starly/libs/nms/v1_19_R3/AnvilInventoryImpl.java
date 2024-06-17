@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import java.util.function.Consumer;
 
-class AnvilInventoryImpl extends AnvilMenu implements AnvilInventory {
+public class AnvilInventoryImpl extends AnvilMenu implements AnvilInventory {
 
     private final Component title;
     private final List<Consumer<String>> renameHandlers;

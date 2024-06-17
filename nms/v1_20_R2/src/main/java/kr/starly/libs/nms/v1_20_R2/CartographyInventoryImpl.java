@@ -23,7 +23,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.jetbrains.annotations.NotNull;
 
-class CartographyInventoryImpl extends CartographyTableMenu implements CartographyInventory {
+public class CartographyInventoryImpl extends CartographyTableMenu implements CartographyInventory {
 
     private static final FieldAccessor RESULT_CONTAINER_FIELD = new FieldResolver(CartographyTableMenu.class).resolveAccessor("resultContainer");
 

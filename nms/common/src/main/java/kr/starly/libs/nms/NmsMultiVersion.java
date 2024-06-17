@@ -36,10 +36,10 @@ public class NmsMultiVersion {
     private static final ConstructorWrapper<CartographyInventory> CARTOGRAPHY_INVENTORY_CONSTRUCTOR =
             new ConstructorResolver(CARTOGRAPHY_INVENTORY_CLASS).resolveWrapper(new Class<?>[]{Player.class, ComponentWrapper.class});
 
-    private static final InventoryUtils INVENTORY_UTILS = (InventoryUtils) new ConstructorResolver(INVENTORY_UTILS_CLASS).resolveWrapper().newInstance();
-    private static final ItemUtils ITEM_UTILS = (ItemUtils) new ConstructorResolver(ITEM_UTILS_CLASS).resolveWrapper().newInstance();
-    private static final PlayerUtils PLAYER_UTILS = (PlayerUtils) new ConstructorResolver(PLAYER_UTILS_CLASS).resolveWrapper().newInstance();
-    private static final InjectUtils INJECT_UTILS = (InjectUtils) new ConstructorResolver(INJECT_UTILS_CLASS).resolveWrapper().newInstance();
+    private static final InventoryUtils INVENTORY_UTILS = (InventoryUtils) new ConstructorResolver(INVENTORY_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
+    private static final ItemUtils ITEM_UTILS = (ItemUtils) new ConstructorResolver(ITEM_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
+    private static final PlayerUtils PLAYER_UTILS = (PlayerUtils) new ConstructorResolver(PLAYER_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
+    private static final InjectUtils INJECT_UTILS = (InjectUtils) new ConstructorResolver(INJECT_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
 
     public static InventoryUtils getInventoryUtils() {
         return INVENTORY_UTILS;
@@ -67,6 +67,6 @@ public class NmsMultiVersion {
 
     @SuppressWarnings("unchecked")
     private static <T> Class<T> getImplClass(String className) {
-        return (Class<T>) new ClassResolver().resolveSilent("kr.starlyh.libs.nms." + nmsRevision.getPackageName() + className);
+        return (Class<T>) new ClassResolver().resolveSilent("kr.starly.libs.nms." + nmsRevision.getPackageName() + "." + className);
     }
 }

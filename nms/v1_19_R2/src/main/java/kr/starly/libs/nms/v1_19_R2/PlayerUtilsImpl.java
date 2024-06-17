@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class PlayerUtilsImpl implements PlayerUtils {
+public class PlayerUtilsImpl implements PlayerUtils {
 
     @SuppressWarnings("rawtypes")
     private static final MethodWrapper REGISTER_LISTENERS_METHOD = new MethodResolver(PlayerAdvancements.class).resolveWrapper(new ResolverQuery("registerListeners", ServerAdvancementManager.class));

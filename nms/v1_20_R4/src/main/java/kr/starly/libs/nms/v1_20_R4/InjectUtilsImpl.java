@@ -42,7 +42,9 @@ public class InjectUtilsImpl implements InjectUtils {
     public String parsePlayerName(Object rawPacket) {
         if (rawPacket instanceof ServerboundHelloPacket packet) {
             String playerName = packet.name();
-            return playerName != null && !playerName.isEmpty() ? playerName : null;
+            if (playerName == null || playerName.isEmpty()) return null;
+
+            return playerName.substring(0, Math.min(16, playerName.length()));
         }
 
         return null;
