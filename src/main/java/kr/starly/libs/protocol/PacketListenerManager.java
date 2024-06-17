@@ -20,7 +20,7 @@ public final class PacketListenerManager {
     }
 
     public void unregisterPacketListener(PacketListener listener) {
-        listenersMap.entrySet().removeIf(l -> l.getValue().remove(listener) && l.getValue().isEmpty());
+        listenersMap.entrySet().removeIf((l) -> l.getValue().remove(listener) && l.getValue().isEmpty());
     }
 
     void callEvent(PacketEvent event) {
