@@ -1,8 +1,9 @@
 plugins {
+    id "maven-publish"
     id "io.github.goooler.shadow" version "8.1.7"
 }
 
-group = "kr.starly.server"
+group = "kr.starly"
 version = "1.0"
 
 allprojects {
@@ -61,6 +62,18 @@ shadowJar {
 
     relocate "de.tr7zw.changeme.nbtapi", "kr.starly.libs.nbtapi"
     relocate "org.json", "kr.starly.libs.json"
+}
+
+publishing {
+    publications {
+        shadow(MavenPublication) { publication ->
+            project.shadow.component(publication)
+        }
+    }
+
+    repositories {
+        mavenLocal()
+    }
 }
 
 build.dependsOn shadowJar

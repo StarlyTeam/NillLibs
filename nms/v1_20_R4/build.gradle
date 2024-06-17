@@ -1,4 +1,4 @@
-group = "kr.starly.server.nms.${project.name}"
+group = "kr.starly.nms.${project.name}"
 version = rootProject.version
 
 dependencies {
