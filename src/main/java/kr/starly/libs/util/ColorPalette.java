@@ -18,7 +18,7 @@ public class ColorPalette {
 
     static {
         ByteArrayOutputStream out = new ByteArrayOutputStream(256 * 256 * 256);
-        try (InputStream in = ColorPalette.class.getResourceAsStream("/colors.bin")) {
+        try (InputStream in = ColorPalette.class.getResourceAsStream("/assets/colors.bin")) {
             assert in != null;
             in.transferTo(out);
         } catch (IOException e) {
