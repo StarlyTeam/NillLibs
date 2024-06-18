@@ -14,6 +14,7 @@ import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
+import org.bukkit.inventory.ItemRarity;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -88,7 +89,7 @@ public abstract class AbstractItemBuilder<S> implements ItemProvider {
             if (maxStackSize != null && VersionUtils.isServerHigherOrEqual("1.20.5"))
                 itemMeta.setMaxStackSize(maxStackSize);
             if (rarity != null && VersionUtils.isServerHigherOrEqual("1.20.5"))
-                itemMeta.setRarity(new FieldResolver(new ClassResolver().resolveSilent("org.bukkit.inventory.ItemRarity")).resolveAccessor(rarity).get(null));
+                itemMeta.setRarity(ItemRarity.valueOf(rarity));
 
             if (enchantments != null) {
                 if (base != null)
