@@ -2,5 +2,5 @@ main: kr.starly.libs.NillLibs
 name: NillLibs
 author: NillPoe
 
-version: 1.0
+version: 1.1
 api-version: '1.20'
