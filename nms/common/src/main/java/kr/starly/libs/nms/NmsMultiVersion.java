@@ -2,10 +2,7 @@ package kr.starly.libs.nms;
 
 import kr.starly.libs.nms.abstraction.inventory.AnvilInventory;
 import kr.starly.libs.nms.abstraction.inventory.CartographyInventory;
-import kr.starly.libs.nms.abstraction.util.InjectUtils;
-import kr.starly.libs.nms.abstraction.util.InventoryUtils;
-import kr.starly.libs.nms.abstraction.util.ItemUtils;
-import kr.starly.libs.nms.abstraction.util.PlayerUtils;
+import kr.starly.libs.nms.abstraction.util.*;
 import kr.starly.libs.nms.component.ComponentWrapper;
 import kr.starly.libs.nms.reflect.resolver.ClassResolver;
 import kr.starly.libs.nms.reflect.resolver.ConstructorResolver;
@@ -22,12 +19,13 @@ public class NmsMultiVersion {
 
     private static final NmsRevision nmsRevision = NmsRevision.REQUIRED_REVISION;
 
-    private static final Class<InventoryUtils> INVENTORY_UTILS_CLASS = getImplClass("InventoryUtilsImpl");
-    private static final Class<ItemUtils> ITEM_UTILS_CLASS = getImplClass("ItemUtilsImpl");
-    private static final Class<PlayerUtils> PLAYER_UTILS_CLASS = getImplClass("PlayerUtilsImpl");
-    private static final Class<InjectUtils> INJECT_UTILS_CLASS = getImplClass("InjectUtilsImpl");
-    private static final Class<AnvilInventory> ANVIL_INVENTORY_CLASS = getImplClass("AnvilInventoryImpl");
-    private static final Class<CartographyInventory> CARTOGRAPHY_INVENTORY_CLASS = getImplClass("CartographyInventoryImpl");
+    private static final Class<InventoryUtils> INVENTORY_UTILS_CLASS = getImplClass("InventoryUtils");
+    private static final Class<ItemUtils> ITEM_UTILS_CLASS = getImplClass("ItemUtils");
+    private static final Class<PlayerUtils> PLAYER_UTILS_CLASS = getImplClass("PlayerUtils");
+    private static final Class<InjectUtils> INJECT_UTILS_CLASS = getImplClass("InjectUtils");
+    private static final Class<ItemTranslator> ITEM_TRANSLATOR_CLASS = getImplClass("ItemTranslator");
+    private static final Class<AnvilInventory> ANVIL_INVENTORY_CLASS = getImplClass("AnvilInventory");
+    private static final Class<CartographyInventory> CARTOGRAPHY_INVENTORY_CLASS = getImplClass("CartographyInventory");
 
     @SuppressWarnings("unchecked")
     private static final ConstructorWrapper<AnvilInventory> ANVIL_INVENTORY_CONSTRUCTOR =
@@ -40,6 +38,7 @@ public class NmsMultiVersion {
     private static final ItemUtils ITEM_UTILS = (ItemUtils) new ConstructorResolver(ITEM_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
     private static final PlayerUtils PLAYER_UTILS = (PlayerUtils) new ConstructorResolver(PLAYER_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
     private static final InjectUtils INJECT_UTILS = (InjectUtils) new ConstructorResolver(INJECT_UTILS_CLASS).resolveIndexWrapper(0).newInstance();
+    private static final ItemTranslator ITEM_TRANSLATOR = (ItemTranslator) new ConstructorResolver(ITEM_TRANSLATOR_CLASS).resolveIndexWrapper(0).newInstance();
 
     public static InventoryUtils getInventoryUtils() {
         return INVENTORY_UTILS;
@@ -57,6 +56,10 @@ public class NmsMultiVersion {
         return INJECT_UTILS;
     }
 
+    public static ItemTranslator getItemTranslator() {
+        return ITEM_TRANSLATOR;
+    }
+
     public static AnvilInventory createAnvilInventory(@NotNull Player player, @Nullable ComponentWrapper title, @Nullable List<@NotNull Consumer<String>> renameHandlers) {
         return ANVIL_INVENTORY_CONSTRUCTOR.newInstance(player, title, renameHandlers);
     }
@@ -67,6 +70,6 @@ public class NmsMultiVersion {
 
     @SuppressWarnings("unchecked")
     private static <T> Class<T> getImplClass(String className) {
-        return (Class<T>) new ClassResolver().resolveSilent("kr.starly.libs.nms." + nmsRevision.getPackageName() + "." + className);
+        return (Class<T>) new ClassResolver().resolveSilent("kr.starly.libs.nms." + nmsRevision.getPackageName() + "." + className + "Impl");
     }
 }
