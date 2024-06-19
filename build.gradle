@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "kr.starly"
-version = "1.1"
+version = "1.2"
 
 allprojects {
     apply plugin: "java"
@@ -20,6 +20,7 @@ allprojects {
         maven { url "https://libraries.minecraft.net/" } // authlib
         maven { url "https://repo.papermc.io/repository/maven-public/" } // paper-api
         maven { url "https://repo.codemc.io/repository/maven-public/" } // item-nbt-api
+        maven { url "https://repo.xenondevs.xyz/releases" } // invui
     }
 
     dependencies {
@@ -44,6 +45,7 @@ dependencies {
     compileOnly "org.spigotmc:spigot:1.20.6-R0.1-SNAPSHOT:remapped-mojang"
     api "org.json:json:20240303"
     api "de.tr7zw:item-nbt-api:2.13.0"
+    api "xyz.xenondevs.invui:invui:1.32"
 
     api project(":nms:common")
     api project(":nms:v1_18_R1")
@@ -61,8 +63,20 @@ shadowJar {
     archiveFileName = "NillLibs.jar"
     destinationDirectory = file("/target")
 
-    relocate "de.tr7zw.changeme.nbtapi", "kr.starly.libs.nbtapi"
     relocate "org.json", "kr.starly.libs.json"
+    relocate "de.tr7zw.changeme.nbtapi", "kr.starly.libs.nbtapi"
+    relocate "xyz.xenondevs.inventoryaccess", "kr.starly.libs.inventory.access"
+    relocate "xyz.xenondevs.invui", "kr.starly.libs.inventory"
+    relocate "xyz.xenondevs.invui.util.ArrayUtils", "kr.starly.libs.util.ArrayUtils"
+    relocate "xyz.xenondevs.invui.util.ColorPalette", "kr.starly.libs.util.ColorPalette"
+    relocate "xyz.xenondevs.invui.util.DataUtils", "kr.starly.libs.util.DataUtils"
+    relocate "xyz.xenondevs.invui.util.InventoryUtils", "kr.starly.libs.util.InventoryUtils"
+    relocate "xyz.xenondevs.invui.util.ItemUtils", "kr.starly.libs.util.ItemUtils"
+    relocate "xyz.xenondevs.invui.util.MathUtils", "kr.starly.libs.util.MathUtils"
+    relocate "xyz.xenondevs.invui.util.Pair", "kr.starly.libs.util.Pair"
+    relocate "xyz.xenondevs.invui.util.Point2D", "kr.starly.libs.util.Point2D"
+    relocate "xyz.xenondevs.invui.util.SlotUtils", "kr.starly.libs.util.SlotUtils"
+    relocate "xyz.xenondevs.invui.util.TriConsumer", "kr.starly.libs.util.TriConsumer"
 }
 
 publishing {

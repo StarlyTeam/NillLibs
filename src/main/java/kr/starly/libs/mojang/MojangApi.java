@@ -22,8 +22,7 @@ public class MojangApi {
             String uuid = jsonResponse.getString("id");
             uuid = uuid.substring(0, 8) + "-" + uuid.substring(8, 12) + "-" + uuid.substring(12, 16) + "-" + uuid.substring(16, 20) + "-" + uuid.substring(20);
             return UUID.fromString(uuid);
-        } catch (Exception ignored) {
-        }
+        } catch (Exception ignored) {}
 
         return null;
     }
@@ -40,8 +39,7 @@ public class MojangApi {
 
             JSONObject jsonResponse = new JSONObject(response);
             return jsonResponse.getString("name");
-        } catch (Exception ignored) {
-        }
+        } catch (Exception ignored) {}
 
         return null;
     }
