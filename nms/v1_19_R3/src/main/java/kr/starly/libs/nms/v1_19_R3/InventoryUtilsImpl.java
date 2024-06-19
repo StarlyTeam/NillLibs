@@ -2,6 +2,7 @@ package kr.starly.libs.nms.v1_19_R3;
 
 import kr.starly.libs.nms.abstraction.util.InventoryUtils;
 import kr.starly.libs.nms.component.ComponentWrapper;
+import net.kyori.adventure.text.serializer.json.JSONComponentSerializer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundOpenScreenPacket;
 import net.minecraft.server.level.ServerPlayer;
@@ -50,7 +51,7 @@ public class InventoryUtilsImpl implements InventoryUtils {
                 if (title == null) {
                     if (container instanceof MenuProvider)
                         titleComponent = ((MenuProvider) container).getDisplayName();
-                    else titleComponent = CraftChatMessage.fromString(menu.getBukkitView().getTitle())[0];
+                    else titleComponent = CraftChatMessage.fromJSON(JSONComponentSerializer.json().serialize(menu.getBukkitView().title()));
                 } else titleComponent = createNMSComponent(title);
 
                 menu.checkReachable = false;
