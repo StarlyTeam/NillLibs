@@ -49,8 +49,7 @@ public class InventoryUtilsImpl implements InventoryUtils {
                 Container container = ((CraftInventory) inventory).getInventory();
                 Component titleComponent;
                 if (title == null) {
-                    if (container instanceof MenuProvider)
-                        titleComponent = ((MenuProvider) container).getDisplayName();
+                    if (container instanceof MenuProvider) titleComponent = ((MenuProvider) container).getDisplayName();
                     else titleComponent = CraftChatMessage.fromJSON(JSONComponentSerializer.json().serialize(menu.getBukkitView().title()));
                 } else titleComponent = createNMSComponent(title);
 
