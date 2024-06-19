@@ -10,6 +10,7 @@ import net.minecraft.nbt.NbtAccounter;
 import net.minecraft.nbt.NbtIo;
 import net.minecraft.world.item.ItemStack;
 import org.bukkit.craftbukkit.v1_20_R3.inventory.CraftItemStack;
+import org.bukkit.craftbukkit.v1_20_R3.util.CraftChatMessage;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;
 
@@ -74,12 +75,12 @@ public class ItemUtilsImpl implements ItemUtils {
     @Override
     public void setDisplayName(@NotNull ItemMeta itemMeta, @NotNull ComponentWrapper name) {
         FieldAccessor setLore = new FieldResolver(new OBCClassResolver().resolveSilent("inventory.CraftMetaItem")).resolveAccessor("displayName");
-        setLore.set(itemMeta, name.serializeToJson());
+        setLore.set(itemMeta, InventoryUtilsImpl.createNMSComponent(name));
     }
 
     @Override
     public void setLore(@NotNull ItemMeta itemMeta, @NotNull List<@NotNull ComponentWrapper> lore) {
         FieldAccessor setLore = new FieldResolver(new OBCClassResolver().resolveSilent("inventory.CraftMetaItem")).resolveAccessor("lore");
-        setLore.set(itemMeta, lore.stream().map(ComponentWrapper::serializeToJson).collect(Collectors.toList()));
+        setLore.set(itemMeta, lore.stream().map(InventoryUtilsImpl::createNMSComponent).collect(Collectors.toList()));
     }
 }
