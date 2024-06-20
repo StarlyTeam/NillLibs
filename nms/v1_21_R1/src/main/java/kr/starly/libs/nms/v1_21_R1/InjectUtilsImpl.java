@@ -1,8 +1,10 @@
 package kr.starly.libs.nms.v1_21_R1;
 
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
 import kr.starly.libs.nms.abstraction.util.InjectUtils;
 import kr.starly.libs.nms.reflect.resolver.FieldResolver;
+import kr.starly.libs.nms.reflect.util.AccessUtil;
 import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.login.ServerboundHelloPacket;
 import net.minecraft.server.network.ServerConnectionListener;
@@ -12,6 +14,7 @@ import org.bukkit.craftbukkit.v1_21_R1.CraftServer;
 import org.bukkit.craftbukkit.v1_21_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
+import java.lang.reflect.Field;
 import java.util.List;
 
 public class InjectUtilsImpl implements InjectUtils {
@@ -23,17 +26,34 @@ public class InjectUtilsImpl implements InjectUtils {
 
     @SuppressWarnings({"unchecked", "rawtypes"})
     @Override
-    public List<Object> getServerConnectionChannels() {
+    public List<Object> getServerConnections() {
         ServerConnectionListener serverConnection = ((CraftServer) Bukkit.getServer()).getServer().getConnection();
         if (serverConnection == null) return null;
 
         return (List) serverConnection.getConnections();
     }
 
+    @SuppressWarnings("unchecked")
+    @Override
+    public List<ChannelFuture> getServerChannels() {
+        ServerConnectionListener serverConnection = ((CraftServer) Bukkit.getServer()).getServer().getConnection();
+        if (serverConnection == null) return null;
+
+        Field field = new FieldResolver(serverConnection.getClass()).resolveSilent("f");
+        AccessUtil.setAccessible(field);
+
+        try {
+            return (List<ChannelFuture>) field.get(serverConnection);
+        } catch (IllegalArgumentException | IllegalAccessException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
+
     @Override
     public Channel getChannel(Player player) {
         ServerGamePacketListenerImpl connection = ((CraftPlayer) player).getHandle().connection;
-        Connection manager = new FieldResolver(connection.getClass()).resolveAccessor("connection").get(connection);
+        Connection manager = new FieldResolver(connection.getClass()).resolveAccessor("h").get(connection);
 
         return manager.channel;
     }

@@ -1,4 +1,4 @@
-package kr.starly.libs.nms.v1_19_R2;
+package kr.starly.libs.nms.v1_20_R2;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
@@ -10,8 +10,8 @@ import net.minecraft.network.protocol.login.ServerboundHelloPacket;
 import net.minecraft.server.network.ServerConnectionListener;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
 import org.bukkit.Bukkit;
-import org.bukkit.craftbukkit.v1_19_R2.CraftServer;
-import org.bukkit.craftbukkit.v1_19_R2.entity.CraftPlayer;
+import org.bukkit.craftbukkit.v1_20_R2.CraftServer;
+import org.bukkit.craftbukkit.v1_20_R2.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
 import java.lang.reflect.Field;

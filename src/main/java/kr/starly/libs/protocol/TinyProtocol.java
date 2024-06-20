@@ -112,7 +112,7 @@ public class TinyProtocol {
     }
 
     private void registerChannelHandler() {
-        networkManagers = NmsMultiVersion.getInjectUtils().getServerConnectionChannels();
+        networkManagers = NmsMultiVersion.getInjectUtils().getServerConnections();
         if (networkManagers == null) {
             throw new IllegalArgumentException("Failed to obtain list of network managers");
         }
@@ -121,9 +121,7 @@ public class TinyProtocol {
 
         boolean looking = true;
         while (looking) {
-            Object serverConnection = NmsMultiVersion.getInjectUtils().getServerConnection();
-            List<ChannelFuture> channels = new FieldResolver(serverConnection.getClass()).resolveAccessor("channels", "f").get(serverConnection);
-
+            List<ChannelFuture> channels = NmsMultiVersion.getInjectUtils().getServerChannels();
             for (ChannelFuture item : channels) {
                 if (item == null) break;
 
