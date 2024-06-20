@@ -53,7 +53,7 @@ public class InjectUtilsImpl implements InjectUtils {
     @Override
     public Channel getChannel(Player player) {
         ServerGamePacketListenerImpl connection = ((CraftPlayer) player).getHandle().connection;
-        Connection manager = new FieldResolver(connection.getClass()).resolveAccessor("h").get(connection);
+        Connection manager = new FieldResolver(connection.getClass()).resolveAccessor("c").get(connection);
 
         return manager.channel;
     }
