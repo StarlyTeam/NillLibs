@@ -32,7 +32,7 @@ allprojects {
         compileOnly "org.json:json:20240303"
 
         compileOnly "com.mojang:authlib:6.0.54"
-        compileOnly "io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT"
+        compileOnly "io.papermc.paper:paper-api:1.18-R0.1-SNAPSHOT"
         compileOnly "de.tr7zw:item-nbt-api:2.13.0"
     }
 
