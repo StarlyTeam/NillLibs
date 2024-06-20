@@ -11,7 +11,8 @@ allprojects {
     apply plugin: "java-library"
 
     java {
-        toolchain.languageVersion = JavaLanguageVersion.of(21)
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
 
     repositories {
@@ -31,7 +32,6 @@ allprojects {
         compileOnly "org.json:json:20240303"
 
         compileOnly "com.mojang:authlib:6.0.54"
-//        compileOnly "io.papermc.paper:paper-api:1.18-R0.1-SNAPSHOT"
         compileOnly "io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT"
         compileOnly "de.tr7zw:item-nbt-api:2.13.0"
     }
@@ -48,15 +48,7 @@ dependencies {
     api "xyz.xenondevs.invui:invui:1.32"
 
     api project(":nms:common")
-    api project(":nms:v1_18_R1")
-    api project(":nms:v1_18_R2")
-    api project(":nms:v1_19_R1")
-    api project(":nms:v1_19_R2")
-    api project(":nms:v1_19_R3")
-    api project(":nms:v1_20_R1")
-    api project(":nms:v1_20_R2")
-    api project(":nms:v1_20_R3")
-    api project(":nms:v1_20_R4")
+    api fileTree("/target/nms") { include "*.jar" }
 }
 
 shadowJar {

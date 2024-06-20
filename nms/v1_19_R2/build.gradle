@@ -1,10 +1,12 @@
 plugins {
-    id "fr.flowarg.nmsremaphelper" version "1.0.2"
+    id "me.tagavari.nmsremap" version "1.0.0"
 }
 
-nmsremaphelper {
-    spigotVersion = "1.19.3-R0.1-SNAPSHOT"
+remap {
+    version = "1.19.3-R0.1-SNAPSHOT"
+    outputFile = file("../../target/nms/${project.name}-remapped.jar")
 }
+assemble.dependsOn remap
 
 dependencies {
     compileOnly "org.spigotmc:spigot:1.19.3-R0.1-SNAPSHOT:remapped-mojang"

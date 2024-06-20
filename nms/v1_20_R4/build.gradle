@@ -5,3 +5,8 @@ dependencies {
     compileOnly "org.spigotmc:spigot:1.20.6-R0.1-SNAPSHOT:remapped-mojang"
     compileOnly project(":nms:common")
 }
+
+jar {
+    archiveFileName = "${project.name}-original.jar"
+    destinationDirectory = file("../../target/nms")
+}
