@@ -1,4 +1,4 @@
-package kr.starly.libs.nms;
+package kr.starly.libs.nms.v1_20_R4;
 
 import kr.starly.libs.nms.abstraction.util.ItemTranslator;
 import org.bukkit.craftbukkit.v1_20_R4.inventory.CraftItemStack;
