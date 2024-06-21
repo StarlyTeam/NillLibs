@@ -4,42 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="fix: InjectionUtilsImpl">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_19_R3/src/main/java/kr/starly/libs/nms/v1_19_R3/InjectUtilsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_19_R3/src/main/java/kr/starly/libs/nms/v1_19_R3/ItemTranslatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_20_R2/src/main/java/kr.starly.libs.nms.v1_20_R2/InjectUtilsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_20_R2/src/main/java/kr.starly.libs.nms.v1_20_R2/ItemTranslatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_20_R4/src/main/java/kr/starly/libs/nms/InjectUtilsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_20_R4/src/main/java/kr/starly/libs/nms/ItemTranslatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_20_R4-original.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_21_R1-original.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="refactor: style code">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/common/src/main/java/kr/starly/libs/nms/abstraction/util/InjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/common/src/main/java/kr/starly/libs/nms/abstraction/util/InjectUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_18_R1/src/main/java/kr/starly/libs/nms/v1_18_R1/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_18_R1/src/main/java/kr/starly/libs/nms/v1_18_R1/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_18_R2/src/main/java/kr/starly/libs/nms/v1_18_R2/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_18_R2/src/main/java/kr/starly/libs/nms/v1_18_R2/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_19_R1/src/main/java/kr/starly/libs/nms/v1_19_R1/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_19_R1/src/main/java/kr/starly/libs/nms/v1_19_R1/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_19_R2/src/main/java/kr/starly/libs/nms/v1_19_R2/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_19_R2/src/main/java/kr/starly/libs/nms/v1_19_R2/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_20_R1/src/main/java/kr/starly/libs/nms/v1_20_R1/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_20_R1/src/main/java/kr/starly/libs/nms/v1_20_R1/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_20_R3/src/main/java/kr/starly/libs/nms/v1_20_R3/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_20_R3/src/main/java/kr/starly/libs/nms/v1_20_R3/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nms/v1_21_R1/src/main/java/kr/starly/libs/nms/v1_21_R1/InjectUtilsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/nms/v1_21_R1/src/main/java/kr/starly/libs/nms/v1_21_R1/InjectUtilsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/starly/libs/protocol/TinyProtocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/starly/libs/protocol/TinyProtocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/NillLibs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/NillLibs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,25 +75,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.NillLibs [build].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Developments/Starly3/NillLibs/nms/v1_19_R3/src/main/java/kr/starly/libs/nms",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "trusted.hosts",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.NillLibs [build].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Developments/Starly3/NillLibs/nms/v1_19_R3/src/main/java/kr/starly/libs/nms&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;trusted.hosts&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_19_R3\src\main\java\kr\starly\libs\nms" />
@@ -167,8 +134,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -181,8 +148,114 @@
       <option name="presentableId" value="Default" />
       <updated>1718857723702</updated>
       <workItem from="1718857724899" duration="86000" />
-      <workItem from="1718857824758" duration="392000" />
+      <workItem from="1718857824758" duration="3546000" />
+      <workItem from="1719003585381" duration="58000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
+      <option name="closed" value="true" />
+      <created>1718858431390</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718858431390</updated>
+    </task>
+    <task id="LOCAL-00002" summary="project">
+      <option name="closed" value="true" />
+      <created>1718858517924</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718858517924</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: downgrade paper-api to 1.18">
+      <option name="closed" value="true" />
+      <created>1718858543794</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718858543794</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: downgrade paper-api to 1.18">
+      <option name="closed" value="true" />
+      <created>1718858560920</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718858560920</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: up-to-date target jar">
+      <option name="closed" value="true" />
+      <created>1718858571224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718858571224</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: package tree">
+      <option name="closed" value="true" />
+      <created>1718858980141</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718858980141</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix: package tree">
+      <option name="closed" value="true" />
+      <created>1718859247317</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718859247317</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: NoSuchMethodException">
+      <option name="closed" value="true" />
+      <created>1718859599577</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718859599577</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: UNTRANSLATED">
+      <option name="closed" value="true" />
+      <created>1718859725402</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718859725402</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix: UNTRANSLATED">
+      <option name="closed" value="true" />
+      <created>1718859732189</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718859732189</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix: bugs">
+      <option name="closed" value="true" />
+      <created>1718866368964</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718866368964</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore: up-to-date target jars">
+      <option name="closed" value="true" />
+      <created>1718866458056</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718866458056</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor: style code">
+      <option name="closed" value="true" />
+      <created>1719003635776</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719003635776</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +263,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: InjectionUtilsImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: InjectionUtilsImpl" />
+    <MESSAGE value="project" />
+    <MESSAGE value="chore: downgrade paper-api to 1.18" />
+    <MESSAGE value="chore: up-to-date target jar" />
+    <MESSAGE value="fix: package tree" />
+    <MESSAGE value="fix: NoSuchMethodException" />
+    <MESSAGE value="fix: UNTRANSLATED" />
+    <MESSAGE value="fix: bugs" />
+    <MESSAGE value="chore: up-to-date target jars" />
+    <MESSAGE value="refactor: style code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: style code" />
   </component>
 </project>
