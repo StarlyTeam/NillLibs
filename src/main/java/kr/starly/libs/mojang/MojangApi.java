@@ -1,5 +1,6 @@
 package kr.starly.libs.mojang;
 
+import lombok.NoArgsConstructor;
 import org.json.JSONObject;
 
 import java.net.URI;
@@ -7,6 +8,9 @@ import java.net.URL;
 import java.util.Scanner;
 import java.util.UUID;
 
+import static lombok.AccessLevel.PRIVATE;
+
+@NoArgsConstructor(access = PRIVATE)
 public class MojangApi {
 
     public static UUID fetchUuid(String username) {
