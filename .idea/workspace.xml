@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="project">
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="chore: up-to-date target jar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/starly/libs/util/TriConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/NillLibs.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/yejunho10/NillLibs&quot;,
+    &quot;url&quot;: &quot;https://github.com/StarlyTeam/NillLibs&quot;,
     &quot;accountId&quot;: &quot;fd292d15-248c-4d86-910b-05ccf487fef3&quot;
   }
 }</component>
@@ -83,26 +80,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.NillLibs [build].executor": "Run",
-    "Gradle.NillLibs [publishToMavenLocal].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Developments/Starly3/AstralShop-Log",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "trusted.hosts",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.NillLibs [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.NillLibs [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Developments/Starly3/AstralShop-Log&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;trusted.hosts&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_19_R3\src\main\java\kr\starly\libs\nms" />
@@ -181,7 +178,13 @@
       <updated>1718857723702</updated>
       <workItem from="1718857724899" duration="86000" />
       <workItem from="1718857824758" duration="3546000" />
-      <workItem from="1719003585381" duration="3578000" />
+      <workItem from="1719003585381" duration="6692000" />
+      <workItem from="1719179513774" duration="577000" />
+      <workItem from="1719369270516" duration="27000" />
+      <workItem from="1719466294772" duration="68000" />
+      <workItem from="1719466703609" duration="134000" />
+      <workItem from="1719584619454" duration="26000" />
+      <workItem from="1719735392803" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -303,7 +306,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719003694919</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: shadow - relocating">
+      <option name="closed" value="true" />
+      <created>1719070191145</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719070191145</updated>
+    </task>
+    <task id="LOCAL-00017" summary="project">
+      <option name="closed" value="true" />
+      <created>1719070213922</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1719070213922</updated>
+    </task>
+    <task id="LOCAL-00018" summary="chore: up-to-date target jar">
+      <option name="closed" value="true" />
+      <created>1719070218299</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719070218299</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,8 +345,9 @@
     <MESSAGE value="fix: bugs" />
     <MESSAGE value="chore: up-to-date target jars" />
     <MESSAGE value="refactor: style code" />
-    <MESSAGE value="chore: up-to-date target jar" />
+    <MESSAGE value="fix: shadow - relocating" />
     <MESSAGE value="project" />
-    <option name="LAST_COMMIT_MESSAGE" value="project" />
+    <MESSAGE value="chore: up-to-date target jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: up-to-date target jar" />
   </component>
 </project>
