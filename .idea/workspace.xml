@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="chore: up-to-date target jar">
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="feat: private constructor">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kr/starly/libs/util/Pair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -93,7 +102,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;trusted.hosts&quot;,
@@ -184,7 +193,8 @@
       <workItem from="1719466294772" duration="68000" />
       <workItem from="1719466703609" duration="134000" />
       <workItem from="1719584619454" duration="26000" />
-      <workItem from="1719735392803" duration="23000" />
+      <workItem from="1719735392803" duration="3519000" />
+      <workItem from="1719870279921" duration="192000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -330,7 +340,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719070218299</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat: optimize">
+      <option name="closed" value="true" />
+      <created>1719735452903</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719735452903</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: private constructor">
+      <option name="closed" value="true" />
+      <created>1719735488010</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719735488010</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,6 +374,8 @@
     <MESSAGE value="fix: shadow - relocating" />
     <MESSAGE value="project" />
     <MESSAGE value="chore: up-to-date target jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: up-to-date target jar" />
+    <MESSAGE value="feat: optimize" />
+    <MESSAGE value="feat: private constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: private constructor" />
   </component>
 </project>
