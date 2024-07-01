@@ -59,6 +59,7 @@ shadowJar {
     relocate "de.tr7zw.changeme.nbtapi", "kr.starly.libs.nbtapi"
     relocate("xyz.xenondevs.invui.util", "kr.starly.libs.util") {
         exclude "xyz.xenondevs.invui.util.MojangApiUtils"
+        exclude "xyz.xenondevs.invui.util.Pair"
     }
     relocate("xyz.xenondevs.invui", "kr.starly.libs.inventory") {
         exclude "xyz.xenondevs.invui.util"
