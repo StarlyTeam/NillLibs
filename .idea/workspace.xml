@@ -191,8 +191,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.NillLibs [publish]" />
-        <item itemvalue="Gradle.NillLibs [publishToMavenLocal]" />
         <item itemvalue="Gradle.NillLibs [build]" />
+        <item itemvalue="Gradle.NillLibs [publishToMavenLocal]" />
       </list>
     </recent_temporary>
   </component>
