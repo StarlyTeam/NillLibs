@@ -18,8 +18,12 @@ public interface ItemTranslator {
     // Locale.US
     // Locale.JAPAN
     // Locale.SIMPLIFIED_CHINESE
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({"unchecked", "deprecation"})
     default String translateItemName(ItemStack itemStack, Locale locale) {
+        if (itemStack.hasItemMeta() && itemStack.getItemMeta().hasDisplayName()) {
+            return itemStack.getItemMeta().getDisplayName();
+        }
+
         NmsRevision revision = NmsRevision.REQUIRED_REVISION;
         String resourcePath = "/assets/lang/%d_%d/%s_%s.json"
                 .formatted(revision.getSince()[0], revision.getSince()[1], locale.getLanguage(), locale.getCountry().toLowerCase());

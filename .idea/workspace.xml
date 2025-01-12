@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="Update project">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,7 @@
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_20_R2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NillLibs [publish]">
+  <component name="RunManager" selected="Gradle.NillLibs [build]">
     <configuration name="NillLibs [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,8 +192,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NillLibs [publish]" />
         <item itemvalue="Gradle.NillLibs [build]" />
+        <item itemvalue="Gradle.NillLibs [publish]" />
         <item itemvalue="Gradle.NillLibs [publishToMavenLocal]" />
       </list>
     </recent_temporary>
@@ -227,7 +227,7 @@
       <workItem from="1736664367418" duration="1465000" />
       <workItem from="1736667776302" duration="3000" />
       <workItem from="1736667781933" duration="3549000" />
-      <workItem from="1736677917587" duration="884000" />
+      <workItem from="1736677917587" duration="4897000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -421,7 +421,31 @@
       <option name="project" value="LOCAL" />
       <updated>1736671139823</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Update version">
+      <option name="closed" value="true" />
+      <created>1736678883771</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678883771</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update version">
+      <option name="closed" value="true" />
+      <created>1736678915805</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1736678915805</updated>
+    </task>
+    <task id="LOCAL-00027" summary="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name.">
+      <option name="closed" value="true" />
+      <created>1736688253864</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1736688253864</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +467,8 @@
     <MESSAGE value="feat: private constructor" />
     <MESSAGE value="Update dependencies" />
     <MESSAGE value="Update project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
+    <MESSAGE value="Update version" />
+    <MESSAGE value="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name." />
+    <option name="LAST_COMMIT_MESSAGE" value="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name." />
   </component>
 </project>
