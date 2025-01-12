@@ -4,36 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="feat: private constructor">
-      <change afterPath="$PROJECT_DIR$/nms/v1_21_R2/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_21_R2/src/main/java/kr/starly/libs/nms/v1_21_R2/InjectUtilsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_21_R2/src/main/java/kr/starly/libs/nms/v1_21_R2/ItemTranslatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_21_R3/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_21_R3/src/main/java/kr/starly/libs/nms/v1_21_R3/InjectUtilsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nms/v1_21_R3/src/main/java/kr/starly/libs/nms/v1_21_R3/ItemTranslatorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_21_R2-original.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/nms/v1_21_R3-original.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="Update dependencies">
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/NillLibs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/NillLibs.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R4-original.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R4-original.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nms/v1_21_R1-original.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_21_R1-original.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +224,7 @@
       <workItem from="1719870279921" duration="192000" />
       <workItem from="1736664367418" duration="1465000" />
       <workItem from="1736667776302" duration="3000" />
-      <workItem from="1736667781933" duration="3018000" />
+      <workItem from="1736667781933" duration="3066000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -414,7 +386,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719735488010</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update project">
+      <option name="closed" value="true" />
+      <created>1736670992630</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1736670992630</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update dependencies">
+      <option name="closed" value="true" />
+      <created>1736671002136</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736671002136</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,6 +422,8 @@
     <MESSAGE value="chore: up-to-date target jar" />
     <MESSAGE value="feat: optimize" />
     <MESSAGE value="feat: private constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: private constructor" />
+    <MESSAGE value="Update project" />
+    <MESSAGE value="Update dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update dependencies" />
   </component>
 </project>
