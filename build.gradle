@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "kr.starly"
-version = "1.2"
+version = "1.3"
 
 allprojects {
     apply plugin: "java"
@@ -46,6 +46,8 @@ dependencies {
     api "org.json:json:20240303"
     api "de.tr7zw:item-nbt-api:2.13.0"
     api "xyz.xenondevs.invui:invui:1.32"
+    compileOnly "org.spigotmc:spigot-api:1.21.4-R0.1-SNAPSHOT"
+    compileOnly "org.apache.commons:commons-lang3:3.17.0"
 
     api project(":nms:common")
     api fileTree("/target/nms") { include "*.jar" }

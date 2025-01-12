@@ -5,9 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="feat: private constructor">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kr/starly/libs/util/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R2/src/main/java/kr/starly/libs/nms/v1_21_R2/InjectUtilsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R2/src/main/java/kr/starly/libs/nms/v1_21_R2/ItemTranslatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R3/src/main/java/kr/starly/libs/nms/v1_21_R3/InjectUtilsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R3/src/main/java/kr/starly/libs/nms/v1_21_R3/ItemTranslatorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/nms/v1_21_R2-original.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/nms/v1_21_R3-original.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NillLibs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/NillLibs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R4-original.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R4-original.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_21_R1-original.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_21_R1-original.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,35 +115,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.NillLibs [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.NillLibs [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Developments/Starly3/AstralShop-Log&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;trusted.hosts&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.NillLibs [build].executor": "Run",
+    "Gradle.NillLibs [publishToMavenLocal].executor": "Run",
+    "Gradle.NillLibs [publish].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Develop/NillLibs/nms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15722656",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Develop\NillLibs\nms" />
+      <recent name="D:\Develop\NillLibs\nms\v1_21_R1\src\main\java\kr\starly\libs\nms\v1_21_R2" />
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_19_R3\src\main\java\kr\starly\libs\nms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_20_R2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NillLibs [build]">
+  <component name="RunManager" selected="Gradle.NillLibs [publish]">
     <configuration name="NillLibs [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -162,18 +194,41 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="NillLibs [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NillLibs [build]" />
+        <item itemvalue="Gradle.NillLibs [publish]" />
         <item itemvalue="Gradle.NillLibs [publishToMavenLocal]" />
+        <item itemvalue="Gradle.NillLibs [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -195,6 +250,9 @@
       <workItem from="1719584619454" duration="26000" />
       <workItem from="1719735392803" duration="3519000" />
       <workItem from="1719870279921" duration="192000" />
+      <workItem from="1736664367418" duration="1465000" />
+      <workItem from="1736667776302" duration="3000" />
+      <workItem from="1736667781933" duration="3018000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
