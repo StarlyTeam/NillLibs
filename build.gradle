@@ -70,8 +70,11 @@ shadowJar {
 
 publishing {
     publications {
-        shadow(MavenPublication) { publication ->
-            project.shadow.component(publication)
+        pub(MavenPublication) {
+            artifact file("/target/NillLibs.jar")
+            artifactId "NillLibs"
+            groupId project.group
+            version project.version
         }
     }
 

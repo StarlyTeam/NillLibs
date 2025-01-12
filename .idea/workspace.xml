@@ -123,7 +123,7 @@
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_20_R2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NillLibs [build]">
+  <component name="RunManager" selected="Gradle.NillLibs [publish]">
     <configuration name="NillLibs [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,8 +192,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NillLibs [build]" />
         <item itemvalue="Gradle.NillLibs [publish]" />
+        <item itemvalue="Gradle.NillLibs [build]" />
         <item itemvalue="Gradle.NillLibs [publishToMavenLocal]" />
       </list>
     </recent_temporary>
@@ -227,7 +227,7 @@
       <workItem from="1736664367418" duration="1465000" />
       <workItem from="1736667776302" duration="3000" />
       <workItem from="1736667781933" duration="3549000" />
-      <workItem from="1736677917587" duration="4897000" />
+      <workItem from="1736677917587" duration="5052000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -445,7 +445,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736688253864</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name.">
+      <option name="closed" value="true" />
+      <created>1736688274828</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1736688274828</updated>
+    </task>
+    <task id="LOCAL-00029" summary="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name.">
+      <option name="closed" value="true" />
+      <created>1736688302507</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736688302507</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
