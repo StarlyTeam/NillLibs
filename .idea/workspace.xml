@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="Update dependencies">
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="Update project">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.NillLibs [build].executor": "Run",
     "Gradle.NillLibs [publishToMavenLocal].executor": "Run",
     "Gradle.NillLibs [publish].executor": "Run",
@@ -224,7 +226,8 @@
       <workItem from="1719870279921" duration="192000" />
       <workItem from="1736664367418" duration="1465000" />
       <workItem from="1736667776302" duration="3000" />
-      <workItem from="1736667781933" duration="3066000" />
+      <workItem from="1736667781933" duration="3549000" />
+      <workItem from="1736677917587" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -402,7 +405,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736671002136</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Update dependencies">
+      <option name="closed" value="true" />
+      <created>1736671045287</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1736671045287</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update project">
+      <option name="closed" value="true" />
+      <created>1736671139823</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1736671139823</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,8 +441,8 @@
     <MESSAGE value="chore: up-to-date target jar" />
     <MESSAGE value="feat: optimize" />
     <MESSAGE value="feat: private constructor" />
-    <MESSAGE value="Update project" />
     <MESSAGE value="Update dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dependencies" />
+    <MESSAGE value="Update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
   </component>
 </project>
