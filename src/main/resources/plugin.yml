@@ -1,8 +1,8 @@
 name: NillLibs
 main: kr.starly.libs.NillLibs
-website: https://starly.kr/discord
+website: https://starly.kr/
 authors:
   - NillPoe
 
-version: 1.3.2
+version: 1.3.3
 api-version: 1.18

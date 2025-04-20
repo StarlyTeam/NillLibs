@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name.">
+    <list default="true" id="280d87df-77f0-4f23-83c4-af077e96ae82" name="Changes" comment="chore: local publishing">
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R4/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R4/src/main/java/kr/starly/libs/nms/v1_21_R4/InjectUtilsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nms/v1_21_R4/src/main/java/kr/starly/libs/nms/v1_21_R4/ItemTranslatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/NillLibs.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/NillLibs.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_18_R1-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_18_R2-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R1-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R2-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_19_R3-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R1-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R2-remapped.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/nms/v1_20_R3-remapped.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +86,12 @@
     &quot;assignee&quot;: &quot;yejunho10&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/StarlyTeam/NillLibs&quot;,
-    &quot;accountId&quot;: &quot;fd292d15-248c-4d86-910b-05ccf487fef3&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/StarlyTeam/NillLibs",
+    "accountId": "9b92455a-9c5b-40b0-ad43-3c746f3ec3e7"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -100,7 +115,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Develop/NillLibs/nms",
+    "last_opened_file_path": "D:/developments/NillLibs/nms",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -115,6 +130,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\developments\NillLibs\nms" />
       <recent name="D:\Develop\NillLibs\nms" />
       <recent name="D:\Develop\NillLibs\nms\v1_21_R1\src\main\java\kr\starly\libs\nms\v1_21_R2" />
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_19_R3\src\main\java\kr\starly\libs\nms" />
@@ -123,7 +139,7 @@
       <recent name="D:\Developments\Starly3\NillLibs\nms\v1_20_R2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NillLibs [publish]">
+  <component name="RunManager" selected="Gradle.NillLibs [build]">
     <configuration name="NillLibs [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -192,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NillLibs [publish]" />
         <item itemvalue="Gradle.NillLibs [build]" />
+        <item itemvalue="Gradle.NillLibs [publish]" />
         <item itemvalue="Gradle.NillLibs [publishToMavenLocal]" />
       </list>
     </recent_temporary>
@@ -201,8 +217,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -227,7 +243,8 @@
       <workItem from="1736664367418" duration="1465000" />
       <workItem from="1736667776302" duration="3000" />
       <workItem from="1736667781933" duration="3549000" />
-      <workItem from="1736677917587" duration="5052000" />
+      <workItem from="1736677917587" duration="5121000" />
+      <workItem from="1745179661347" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="fix: InjectionUtilsImpl">
       <option name="closed" value="true" />
@@ -461,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736688302507</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="chore: local publishing">
+      <option name="closed" value="true" />
+      <created>1736688467319</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1736688467320</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,6 +510,7 @@
     <MESSAGE value="Update project" />
     <MESSAGE value="Update version" />
     <MESSAGE value="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name." />
-    <option name="LAST_COMMIT_MESSAGE" value="modify: ItemTranslator#translateItemName(ItemStack, Locale)&#10;- Return the display name if it exists, instead of the translated item name." />
+    <MESSAGE value="chore: local publishing" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: local publishing" />
   </component>
 </project>
